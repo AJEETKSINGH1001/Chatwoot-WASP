@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="11" passed="2" failed="9" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-10-10T12:36:24 IST" name="Default suite" finished-at="2024-10-10T12:39:24 IST" duration-ms="179662">
+    <groups>
+    </groups>
+    <test started-at="2024-10-10T12:36:24 IST" name="Default test" finished-at="2024-10-10T12:39:24 IST" duration-ms="179662">
+      <class name="tests.ConversationsTest">
+        <test-method is-config="true" signature="setupReporting()[pri:0, instance:tests.ConversationsTest@3c41ed1d]" started-at="2024-10-10T12:36:24 IST" name="setupReporting" finished-at="2024-10-10T12:36:25 IST" duration-ms="749" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupReporting -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ConversationsTest@3c41ed1d]" started-at="2024-10-10T12:36:25 IST" name="setUp" finished-at="2024-10-10T12:36:37 IST" duration-ms="11603" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCNavigation()[pri:1, instance:tests.ConversationsTest@3c41ed1d]" started-at="2024-10-10T12:36:37 IST" name="testCNavigation" finished-at="2024-10-10T12:37:04 IST" duration-ms="27277" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCNavigation -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ConversationsTest@3c41ed1d]" started-at="2024-10-10T12:37:04 IST" name="setUp" finished-at="2024-10-10T12:37:14 IST" duration-ms="9904" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testConversationsScreenDisplayed()[pri:2, instance:tests.ConversationsTest@3c41ed1d]" started-at="2024-10-10T12:37:14 IST" name="testConversationsScreenDisplayed" finished-at="2024-10-10T12:37:16 IST" duration-ms="1885" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Test failed due to exception: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [eb69cdec-b224-4aa7-80a5-761beb840b8c, findElement {using=accessibility id, value=Conversations}]
+Capabilities {appium:appActivity: com.bitnudge.ime.parent.vie..., appium:appPackage: com.gamechange.wasp, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, platformName: ANDROID, udid: 084113125P054404}, appium:deviceApiLevel: 30, appium:deviceManufacturer: INFINIX MOBILITY LIMITED, appium:deviceModel: Infinix X6816C, appium:deviceName: 084113125P054404, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1640, appium:deviceUDID: 084113125P054404, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 11, appium:statBarHeight: 72, appium:takesScreenshot: true, appium:udid: 084113125P054404, appium:viewportRect: {height: 1400, left: 0, top: 72, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: eb69cdec-b224-4aa7-80a5-761beb840b8c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Test failed due to exception: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [eb69cdec-b224-4aa7-80a5-761beb840b8c, findElement {using=accessibility id, value=Conversations}]
+Capabilities {appium:appActivity: com.bitnudge.ime.parent.vie..., appium:appPackage: com.gamechange.wasp, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, platformName: ANDROID, udid: 084113125P054404}, appium:deviceApiLevel: 30, appium:deviceManufacturer: INFINIX MOBILITY LIMITED, appium:deviceModel: Infinix X6816C, appium:deviceName: 084113125P054404, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1640, appium:deviceUDID: 084113125P054404, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 11, appium:statBarHeight: 72, appium:takesScreenshot: true, appium:udid: 084113125P054404, appium:viewportRect: {height: 1400, left: 0, top: 72, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: eb69cdec-b224-4aa7-80a5-761beb840b8c
+at org.testng.Assert.fail(Assert.java:110)
+at tests.ConversationsTest.testConversationsScreenDisplayed(ConversationsTest.java:95)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testConversationsScreenDisplayed -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ConversationsTest@3c41ed1d]" started-at="2024-10-10T12:37:16 IST" name="setUp" finished-at="2024-10-10T12:37:26 IST" duration-ms="9811" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testFilterTypeFunctionality()[pri:3, instance:tests.ConversationsTest@3c41ed1d]" started-at="2024-10-10T12:37:26 IST" name="testFilterTypeFunctionality" finished-at="2024-10-10T12:37:56 IST" duration-ms="30537" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Test failed due to exception: Expected condition failed: waiting for visibility of element located by AppiumBy.id: com.gamechange.wasp:id/type_filter (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:appActivity: com.bitnudge.ime.parent.vie..., appium:appPackage: com.gamechange.wasp, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, platformName: ANDROID, udid: 084113125P054404}, appium:deviceApiLevel: 30, appium:deviceManufacturer: INFINIX MOBILITY LIMITED, appium:deviceModel: Infinix X6816C, appium:deviceName: 084113125P054404, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1640, appium:deviceUDID: 084113125P054404, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 11, appium:statBarHeight: 72, appium:takesScreenshot: true, appium:udid: 084113125P054404, appium:viewportRect: {height: 1400, left: 0, top: 72, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: e0b88efa-9e73-4021-a5b0-3c0c47643e5a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Test failed due to exception: Expected condition failed: waiting for visibility of element located by AppiumBy.id: com.gamechange.wasp:id/type_filter (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:appActivity: com.bitnudge.ime.parent.vie..., appium:appPackage: com.gamechange.wasp, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, platformName: ANDROID, udid: 084113125P054404}, appium:deviceApiLevel: 30, appium:deviceManufacturer: INFINIX MOBILITY LIMITED, appium:deviceModel: Infinix X6816C, appium:deviceName: 084113125P054404, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1640, appium:deviceUDID: 084113125P054404, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 11, appium:statBarHeight: 72, appium:takesScreenshot: true, appium:udid: 084113125P054404, appium:viewportRect: {height: 1400, left: 0, top: 72, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: e0b88efa-9e73-4021-a5b0-3c0c47643e5a
+at org.testng.Assert.fail(Assert.java:110)
+at tests.ConversationsTest.testFilterTypeFunctionality(ConversationsTest.java:151)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFilterTypeFunctionality -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ConversationsTest@3c41ed1d]" started-at="2024-10-10T12:37:56 IST" name="setUp" finished-at="2024-10-10T12:38:06 IST" duration-ms="9953" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testTabsFunctionality()[pri:3, instance:tests.ConversationsTest@3c41ed1d]" started-at="2024-10-10T12:38:06 IST" name="testTabsFunctionality" finished-at="2024-10-10T12:38:08 IST" duration-ms="1459" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Test failed due to exception: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [ecb18c33-02e6-4c6d-b5c4-3d0397a46e64, findElement {using=xpath, value=//android.widget.TextView[@resource-id="com.gamechange.wasp.shopkey:id/tTV1"]}]
+Capabilities {appium:appActivity: com.bitnudge.ime.parent.vie..., appium:appPackage: com.gamechange.wasp, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, platformName: ANDROID, udid: 084113125P054404}, appium:deviceApiLevel: 30, appium:deviceManufacturer: INFINIX MOBILITY LIMITED, appium:deviceModel: Infinix X6816C, appium:deviceName: 084113125P054404, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1640, appium:deviceUDID: 084113125P054404, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 11, appium:statBarHeight: 72, appium:takesScreenshot: true, appium:udid: 084113125P054404, appium:viewportRect: {height: 1400, left: 0, top: 72, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: ecb18c33-02e6-4c6d-b5c4-3d0397a46e64]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Test failed due to exception: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [ecb18c33-02e6-4c6d-b5c4-3d0397a46e64, findElement {using=xpath, value=//android.widget.TextView[@resource-id="com.gamechange.wasp.shopkey:id/tTV1"]}]
+Capabilities {appium:appActivity: com.bitnudge.ime.parent.vie..., appium:appPackage: com.gamechange.wasp, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, platformName: ANDROID, udid: 084113125P054404}, appium:deviceApiLevel: 30, appium:deviceManufacturer: INFINIX MOBILITY LIMITED, appium:deviceModel: Infinix X6816C, appium:deviceName: 084113125P054404, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1640, appium:deviceUDID: 084113125P054404, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 11, appium:statBarHeight: 72, appium:takesScreenshot: true, appium:udid: 084113125P054404, appium:viewportRect: {height: 1400, left: 0, top: 72, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: ecb18c33-02e6-4c6d-b5c4-3d0397a46e64
+at org.testng.Assert.fail(Assert.java:110)
+at tests.ConversationsTest.testTabsFunctionality(ConversationsTest.java:120)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTabsFunctionality -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ConversationsTest@3c41ed1d]" started-at="2024-10-10T12:38:08 IST" name="setUp" finished-at="2024-10-10T12:38:16 IST" duration-ms="8491" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testFilterStatusFunctionality()[pri:4, instance:tests.ConversationsTest@3c41ed1d]" started-at="2024-10-10T12:38:16 IST" name="testFilterStatusFunctionality" finished-at="2024-10-10T12:38:17 IST" duration-ms="483" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Test failed due to exception: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [f8a9ead8-9550-4008-907c-b337f98aaddc, findElement {using=id, value=com.gamechange.wasp:id/status_filter}]
+Capabilities {appium:appActivity: com.bitnudge.ime.parent.vie..., appium:appPackage: com.gamechange.wasp, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, platformName: ANDROID, udid: 084113125P054404}, appium:deviceApiLevel: 30, appium:deviceManufacturer: INFINIX MOBILITY LIMITED, appium:deviceModel: Infinix X6816C, appium:deviceName: 084113125P054404, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1640, appium:deviceUDID: 084113125P054404, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 11, appium:statBarHeight: 72, appium:takesScreenshot: true, appium:udid: 084113125P054404, appium:viewportRect: {height: 1400, left: 0, top: 72, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: f8a9ead8-9550-4008-907c-b337f98aaddc]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Test failed due to exception: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [f8a9ead8-9550-4008-907c-b337f98aaddc, findElement {using=id, value=com.gamechange.wasp:id/status_filter}]
+Capabilities {appium:appActivity: com.bitnudge.ime.parent.vie..., appium:appPackage: com.gamechange.wasp, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, platformName: ANDROID, udid: 084113125P054404}, appium:deviceApiLevel: 30, appium:deviceManufacturer: INFINIX MOBILITY LIMITED, appium:deviceModel: Infinix X6816C, appium:deviceName: 084113125P054404, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1640, appium:deviceUDID: 084113125P054404, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 11, appium:statBarHeight: 72, appium:takesScreenshot: true, appium:udid: 084113125P054404, appium:viewportRect: {height: 1400, left: 0, top: 72, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: f8a9ead8-9550-4008-907c-b337f98aaddc
+at org.testng.Assert.fail(Assert.java:110)
+at tests.ConversationsTest.testFilterStatusFunctionality(ConversationsTest.java:171)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFilterStatusFunctionality -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ConversationsTest@3c41ed1d]" started-at="2024-10-10T12:38:17 IST" name="setUp" finished-at="2024-10-10T12:38:26 IST" duration-ms="9425" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testConversationDetailsDisplay()[pri:5, instance:tests.ConversationsTest@3c41ed1d]" started-at="2024-10-10T12:38:26 IST" name="testConversationDetailsDisplay" finished-at="2024-10-10T12:38:27 IST" duration-ms="1253" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Conversations should be displayed. expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Conversations should be displayed. expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at tests.ConversationsTest.testConversationDetailsDisplay(ConversationsTest.java:180)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testConversationDetailsDisplay -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ConversationsTest@3c41ed1d]" started-at="2024-10-10T12:38:27 IST" name="setUp" finished-at="2024-10-10T12:38:37 IST" duration-ms="9648" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSearchFunctionality()[pri:6, instance:tests.ConversationsTest@3c41ed1d]" started-at="2024-10-10T12:38:37 IST" name="testSearchFunctionality" finished-at="2024-10-10T12:38:38 IST" duration-ms="1442" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Test failed due to exception: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [3f32d002-4f22-4b00-bdf4-95ea18766b44, findElement {using=id, value=com.gamechange.wasp:id/search_icon}]
+Capabilities {appium:appActivity: com.bitnudge.ime.parent.vie..., appium:appPackage: com.gamechange.wasp, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, platformName: ANDROID, udid: 084113125P054404}, appium:deviceApiLevel: 30, appium:deviceManufacturer: INFINIX MOBILITY LIMITED, appium:deviceModel: Infinix X6816C, appium:deviceName: 084113125P054404, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1640, appium:deviceUDID: 084113125P054404, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 11, appium:statBarHeight: 72, appium:takesScreenshot: true, appium:udid: 084113125P054404, appium:viewportRect: {height: 1400, left: 0, top: 72, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 3f32d002-4f22-4b00-bdf4-95ea18766b44]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Test failed due to exception: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [3f32d002-4f22-4b00-bdf4-95ea18766b44, findElement {using=id, value=com.gamechange.wasp:id/search_icon}]
+Capabilities {appium:appActivity: com.bitnudge.ime.parent.vie..., appium:appPackage: com.gamechange.wasp, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, platformName: ANDROID, udid: 084113125P054404}, appium:deviceApiLevel: 30, appium:deviceManufacturer: INFINIX MOBILITY LIMITED, appium:deviceModel: Infinix X6816C, appium:deviceName: 084113125P054404, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1640, appium:deviceUDID: 084113125P054404, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 11, appium:statBarHeight: 72, appium:takesScreenshot: true, appium:udid: 084113125P054404, appium:viewportRect: {height: 1400, left: 0, top: 72, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 3f32d002-4f22-4b00-bdf4-95ea18766b44
+at org.testng.Assert.fail(Assert.java:110)
+at tests.ConversationsTest.testSearchFunctionality(ConversationsTest.java:217)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchFunctionality -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ConversationsTest@3c41ed1d]" started-at="2024-10-10T12:38:38 IST" name="setUp" finished-at="2024-10-10T12:38:48 IST" duration-ms="9720" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testOpenConversation()[pri:7, instance:tests.ConversationsTest@3c41ed1d]" started-at="2024-10-10T12:38:48 IST" name="testOpenConversation" finished-at="2024-10-10T12:38:49 IST" duration-ms="1212" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Test failed due to exception: Index 0 out of bounds for length 0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Test failed due to exception: Index 0 out of bounds for length 0
+at org.testng.Assert.fail(Assert.java:110)
+at tests.ConversationsTest.testOpenConversation(ConversationsTest.java:235)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOpenConversation -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ConversationsTest@3c41ed1d]" started-at="2024-10-10T12:38:49 IST" name="setUp" finished-at="2024-10-10T12:38:59 IST" duration-ms="9864" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testUnreadConversationCounter()[pri:9, instance:tests.ConversationsTest@3c41ed1d]" started-at="2024-10-10T12:38:59 IST" name="testUnreadConversationCounter" finished-at="2024-10-10T12:39:01 IST" duration-ms="1619" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Test failed due to exception: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [e00b9987-46e0-4f85-a4fb-3ac30d5d93f3, findElement {using=id, value=com.gamechange.wasp:id/unread_counter}]
+Capabilities {appium:appActivity: com.bitnudge.ime.parent.vie..., appium:appPackage: com.gamechange.wasp, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, platformName: ANDROID, udid: 084113125P054404}, appium:deviceApiLevel: 30, appium:deviceManufacturer: INFINIX MOBILITY LIMITED, appium:deviceModel: Infinix X6816C, appium:deviceName: 084113125P054404, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1640, appium:deviceUDID: 084113125P054404, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 11, appium:statBarHeight: 72, appium:takesScreenshot: true, appium:udid: 084113125P054404, appium:viewportRect: {height: 1400, left: 0, top: 72, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: e00b9987-46e0-4f85-a4fb-3ac30d5d93f3]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Test failed due to exception: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [e00b9987-46e0-4f85-a4fb-3ac30d5d93f3, findElement {using=id, value=com.gamechange.wasp:id/unread_counter}]
+Capabilities {appium:appActivity: com.bitnudge.ime.parent.vie..., appium:appPackage: com.gamechange.wasp, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, platformName: ANDROID, udid: 084113125P054404}, appium:deviceApiLevel: 30, appium:deviceManufacturer: INFINIX MOBILITY LIMITED, appium:deviceModel: Infinix X6816C, appium:deviceName: 084113125P054404, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1640, appium:deviceUDID: 084113125P054404, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 11, appium:statBarHeight: 72, appium:takesScreenshot: true, appium:udid: 084113125P054404, appium:viewportRect: {height: 1400, left: 0, top: 72, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: e00b9987-46e0-4f85-a4fb-3ac30d5d93f3
+at org.testng.Assert.fail(Assert.java:110)
+at tests.ConversationsTest.testUnreadConversationCounter(ConversationsTest.java:250)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUnreadConversationCounter -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ConversationsTest@3c41ed1d]" started-at="2024-10-10T12:39:01 IST" name="setUp" finished-at="2024-10-10T12:39:11 IST" duration-ms="9991" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testTimestampValidation()[pri:10, instance:tests.ConversationsTest@3c41ed1d]" started-at="2024-10-10T12:39:11 IST" name="testTimestampValidation" finished-at="2024-10-10T12:39:12 IST" duration-ms="1173" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTimestampValidation -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ConversationsTest@3c41ed1d]" started-at="2024-10-10T12:39:12 IST" name="setUp" finished-at="2024-10-10T12:39:22 IST" duration-ms="9488" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testEmptyStateDisplay()[pri:11, instance:tests.ConversationsTest@3c41ed1d]" started-at="2024-10-10T12:39:22 IST" name="testEmptyStateDisplay" finished-at="2024-10-10T12:39:23 IST" duration-ms="1187" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Test failed due to exception: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [745f49c0-acef-49a4-922d-227d59393e8a, findElement {using=id, value=com.gamechange.wasp:id/empty_state_message}]
+Capabilities {appium:appActivity: com.bitnudge.ime.parent.vie..., appium:appPackage: com.gamechange.wasp, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, platformName: ANDROID, udid: 084113125P054404}, appium:deviceApiLevel: 30, appium:deviceManufacturer: INFINIX MOBILITY LIMITED, appium:deviceModel: Infinix X6816C, appium:deviceName: 084113125P054404, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1640, appium:deviceUDID: 084113125P054404, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 11, appium:statBarHeight: 72, appium:takesScreenshot: true, appium:udid: 084113125P054404, appium:viewportRect: {height: 1400, left: 0, top: 72, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 745f49c0-acef-49a4-922d-227d59393e8a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Test failed due to exception: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [745f49c0-acef-49a4-922d-227d59393e8a, findElement {using=id, value=com.gamechange.wasp:id/empty_state_message}]
+Capabilities {appium:appActivity: com.bitnudge.ime.parent.vie..., appium:appPackage: com.gamechange.wasp, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, platformName: ANDROID, udid: 084113125P054404}, appium:deviceApiLevel: 30, appium:deviceManufacturer: INFINIX MOBILITY LIMITED, appium:deviceModel: Infinix X6816C, appium:deviceName: 084113125P054404, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1640, appium:deviceUDID: 084113125P054404, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 11, appium:statBarHeight: 72, appium:takesScreenshot: true, appium:udid: 084113125P054404, appium:viewportRect: {height: 1400, left: 0, top: 72, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 745f49c0-acef-49a4-922d-227d59393e8a
+at org.testng.Assert.fail(Assert.java:110)
+at tests.ConversationsTest.testEmptyStateDisplay(ConversationsTest.java:284)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmptyStateDisplay -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ConversationsTest@3c41ed1d]" started-at="2024-10-10T12:39:23 IST" name="tearDown" finished-at="2024-10-10T12:39:24 IST" duration-ms="800" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.ConversationsTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

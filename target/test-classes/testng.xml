@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="MySuite" parallel="false">
+    <test name="Login Tests">
+        <classes>
+            <class name="tests.LoginTest"/> <!-- Update this to your actual package and class name -->
+        </classes>
+    </test>
+</suite>
