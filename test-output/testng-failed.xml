@@ -3,22 +3,18 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.ConversationsTest">
+      <class name="tests.ContactsTest">
         <methods>
-          <include name="setupReporting"/>
-          <include name="testOpenConversation"/>
-          <include name="testConversationDetailsDisplay"/>
-          <include name="testSearchFunctionality"/>
-          <include name="tearDown"/>
-          <include name="testEmptyStateDisplay"/>
-          <include name="testFilterStatusFunctionality"/>
-          <include name="testUnreadConversationCounter"/>
-          <include name="testConversationsScreenDisplayed"/>
-          <include name="testTabsFunctionality"/>
-          <include name="testFilterTypeFunctionality"/>
+          <include name="testSearchContact"/>
+          <include name="testDeleteContact"/>
+          <include name="testBottomNavigationBar"/>
           <include name="setUp"/>
+          <include name="testSortContacts"/>
+          <include name="testDisplayOfContacts"/>
+          <include name="testAddNewContact"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- tests.ConversationsTest -->
+      </class> <!-- tests.ContactsTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -40,6 +40,7 @@ public class BaseTest {
         DesiredCapabilities dc = new DesiredCapabilities();
         dc.setCapability("automationName", AUTOMATION_NAME);
         dc.setCapability(MobileCapabilityType.UDID, DEVICE_UDID);
+
         dc.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, APP_PACKAGE);
         dc.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, APP_ACTIVITY);
 
@@ -52,35 +53,6 @@ public class BaseTest {
     public void tearDown() {
         if (driver != null) {
             driver.quit();
-        }
     }
-
-    // Utility method for waiting until a specific element is visible
-    protected WebElement waitForVisibility(By locator, int timeout) {
-        return new WebDriverWait(driver, Duration.ofSeconds(timeout))
-                .until(ExpectedConditions.visibilityOfElementLocated(locator));
-    }
-
-    // Utility method for clicking an element
-    protected void clickElement(By locator) {
-        waitForVisibility(locator, 30).click();
-    }
-
-    // Utility method for entering text into a field
-    protected void enterText(By locator, String text) {
-        WebElement element = waitForVisibility(locator, 30);
-        element.clear();
-        element.sendKeys(text);
-    }
-
-    // Utility method to validate a toast message
-    protected boolean isToastMessageDisplayed(String message) {
-        try {
-            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-            WebElement toast = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//android.widget.Toast[1]")));
-            return toast.getText().contains(message);
-        } catch (Exception e) {
-            return false;
-        }
-    }
+}
 }
