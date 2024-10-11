@@ -3,18 +3,24 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.ContactsTest">
+      <class name="tests.SettingsTest">
         <methods>
-          <include name="testSearchContact"/>
-          <include name="testDeleteContact"/>
-          <include name="testBottomNavigationBar"/>
-          <include name="setUp"/>
-          <include name="testSortContacts"/>
-          <include name="testDisplayOfContacts"/>
-          <include name="testAddNewContact"/>
+          <include name="verifyNavigationToWABADashboard"/>
+          <include name="verifyNavigationToTeam"/>
+          <include name="verifyNavigationToCannedResponses"/>
+          <include name="verifyNavigationToTemplate"/>
+          <include name="verifyNavigationToCampaigns"/>
           <include name="tearDown"/>
+          <include name="verifyNavigationToAddAttribute"/>
+          <include name="verifyProfileDetails"/>
+          <include name="verifyNavigationToLabel"/>
+          <include name="verifyStatusOptions"/>
+          <include name="setUp"/>
+          <include name="verifyBottomNavigationBar"/>
+          <include name="verifyScreenResponsiveness"/>
+          <include name="verifyLogoutFunctionality"/>
         </methods>
-      </class> <!-- tests.ContactsTest -->
+      </class> <!-- tests.SettingsTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

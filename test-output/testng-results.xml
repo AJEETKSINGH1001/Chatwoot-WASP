@@ -1,69 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="1" failed="6" skipped="0">
+<testng-results ignored="0" total="12" passed="0" failed="0" skipped="12">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-11T14:25:39 IST" name="Default suite" finished-at="2024-10-11T14:26:58 IST" duration-ms="79273">
+  <suite started-at="2024-10-11T15:10:15 IST" name="Default suite" finished-at="2024-10-11T15:10:39 IST" duration-ms="24055">
     <groups>
     </groups>
-    <test started-at="2024-10-11T14:25:39 IST" name="Default test" finished-at="2024-10-11T14:26:58 IST" duration-ms="79273">
-      <class name="tests.ContactsTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ContactsTest@2925bf5b]" started-at="2024-10-11T14:25:39 IST" name="setUp" finished-at="2024-10-11T14:25:50 IST" duration-ms="11484" status="PASS">
+    <test started-at="2024-10-11T15:10:15 IST" name="Default test" finished-at="2024-10-11T15:10:39 IST" duration-ms="24055">
+      <class name="tests.SettingsTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.SettingsTest@7817fd62]" started-at="2024-10-11T15:10:15 IST" name="setUp" finished-at="2024-10-11T15:10:38 IST" duration-ms="23391" status="FAIL">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20246ms. 
+Host info: host: 'LAPTOP-DLCP2JCN', ip: '192.168.56.1'
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:appActivity=com.bitnudge.ime.parent.view.activities.SplashActivity, appium:appPackage=com.gamechange.wasp, appium:automationName=UiAutomator2, appium:deviceName=emulator-5554, appium:fullReset=false, appium:noReset=true, platformName=ANDROID, appium:platformVersion=12.0, appium:udid=084113125P054404}], desiredCapabilities=Capabilities {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 12.0, udid: 084113125P054404}}]
+Capabilities {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 12.0, udid: 084113125P054404}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20246ms. 
+Host info: host: 'LAPTOP-DLCP2JCN', ip: '192.168.56.1'
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:appActivity=com.bitnudge.ime.parent.view.activities.SplashActivity, appium:appPackage=com.gamechange.wasp, appium:automationName=UiAutomator2, appium:deviceName=emulator-5554, appium:fullReset=false, appium:noReset=true, platformName=ANDROID, appium:platformVersion=12.0, appium:udid=084113125P054404}], desiredCapabilities=Capabilities {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 12.0, udid: 084113125P054404}}]
+Capabilities {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 12.0, udid: 084113125P054404}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:89)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:101)
+at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:113)
+at tests.SettingsTest.setUp(SettingsTest.java:38)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testScreenLoad()[pri:1, instance:tests.ContactsTest@2925bf5b]" started-at="2024-10-11T14:25:50 IST" name="testScreenLoad" finished-at="2024-10-11T14:25:57 IST" duration-ms="6534" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testScreenLoad -->
-        <test-method signature="testDisplayOfContacts()[pri:2, instance:tests.ContactsTest@2925bf5b]" started-at="2024-10-11T14:25:57 IST" name="testDisplayOfContacts" finished-at="2024-10-11T14:26:07 IST" duration-ms="10212" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="verifyProfileDetails()[pri:1, instance:tests.SettingsTest@7817fd62]" started-at="2024-10-11T15:10:38 IST" name="verifyProfileDetails" finished-at="2024-10-11T15:10:38 IST" duration-ms="1" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
-              <![CDATA[An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+              <![CDATA[Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20246ms. 
+Host info: host: 'LAPTOP-DLCP2JCN', ip: '192.168.56.1'
 Build info: version: '4.13.0', revision: 'ba948ece5b*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [333ac2d3-bb26-46e5-a494-e89d60b873b4, findElement {using=xpath, value=//android.widget.TextView[@text='Yest']}]
-Capabilities {appium:appActivity: com.bitnudge.ime.parent.vie..., appium:appPackage: com.gamechange.wasp, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 12.0, udid: 084113125P054404}, appium:deviceApiLevel: 30, appium:deviceManufacturer: INFINIX MOBILITY LIMITED, appium:deviceModel: Infinix X6816C, appium:deviceName: 084113125P054404, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1640, appium:deviceUDID: 084113125P054404, appium:fullReset: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 2, appium:platformVersion: 11, appium:statBarHeight: 72, appium:takesScreenshot: true, appium:udid: 084113125P054404, appium:viewportRect: {height: 1400, left: 0, top: 72, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 333ac2d3-bb26-46e5-a494-e89d60b873b4]]>
+Command: [null, newSession {capabilities=[{appium:appActivity=com.bitnudge.ime.parent.view.activities.SplashActivity, appium:appPackage=com.gamechange.wasp, appium:automationName=UiAutomator2, appium:deviceName=emulator-5554, appium:fullReset=false, appium:noReset=true, platformName=ANDROID, appium:platformVersion=12.0, appium:udid=084113125P054404}], desiredCapabilities=Capabilities {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 12.0, udid: 084113125P054404}}]
+Capabilities {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 12.0, udid: 084113125P054404}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20246ms. 
+Host info: host: 'LAPTOP-DLCP2JCN', ip: '192.168.56.1'
 Build info: version: '4.13.0', revision: 'ba948ece5b*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [333ac2d3-bb26-46e5-a494-e89d60b873b4, findElement {using=xpath, value=//android.widget.TextView[@text='Yest']}]
-Capabilities {appium:appActivity: com.bitnudge.ime.parent.vie..., appium:appPackage: com.gamechange.wasp, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 12.0, udid: 084113125P054404}, appium:deviceApiLevel: 30, appium:deviceManufacturer: INFINIX MOBILITY LIMITED, appium:deviceModel: Infinix X6816C, appium:deviceName: 084113125P054404, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1640, appium:deviceUDID: 084113125P054404, appium:fullReset: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 2, appium:platformVersion: 11, appium:statBarHeight: 72, appium:takesScreenshot: true, appium:udid: 084113125P054404, appium:viewportRect: {height: 1400, left: 0, top: 72, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 333ac2d3-bb26-46e5-a494-e89d60b873b4
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+Command: [null, newSession {capabilities=[{appium:appActivity=com.bitnudge.ime.parent.view.activities.SplashActivity, appium:appPackage=com.gamechange.wasp, appium:automationName=UiAutomator2, appium:deviceName=emulator-5554, appium:fullReset=false, appium:noReset=true, platformName=ANDROID, appium:platformVersion=12.0, appium:udid=084113125P054404}], desiredCapabilities=Capabilities {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 12.0, udid: 084113125P054404}}]
+Capabilities {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 12.0, udid: 084113125P054404}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
 at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-at tests.ContactsTest.testDisplayOfContacts(ContactsTest.java:59)
+at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:89)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:101)
+at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:113)
+at tests.SettingsTest.setUp(SettingsTest.java:38)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:829)
 at org.testng.TestRunner.run(TestRunner.java:602)
@@ -82,59 +137,55 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testDisplayOfContacts -->
-        <test-method signature="testAddNewContact()[pri:3, instance:tests.ContactsTest@2925bf5b]" started-at="2024-10-11T14:26:07 IST" name="testAddNewContact" finished-at="2024-10-11T14:26:17 IST" duration-ms="10063" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        </test-method> <!-- verifyProfileDetails -->
+        <test-method signature="verifyStatusOptions()[pri:2, instance:tests.SettingsTest@7817fd62]" started-at="2024-10-11T15:10:38 IST" name="verifyStatusOptions" finished-at="2024-10-11T15:10:38 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
-              <![CDATA[An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+              <![CDATA[Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20246ms. 
+Host info: host: 'LAPTOP-DLCP2JCN', ip: '192.168.56.1'
 Build info: version: '4.13.0', revision: 'ba948ece5b*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [333ac2d3-bb26-46e5-a494-e89d60b873b4, findElement {using=id, value=com.example.yourapp:id/add_contact_button}]
-Capabilities {appium:appActivity: com.bitnudge.ime.parent.vie..., appium:appPackage: com.gamechange.wasp, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 12.0, udid: 084113125P054404}, appium:deviceApiLevel: 30, appium:deviceManufacturer: INFINIX MOBILITY LIMITED, appium:deviceModel: Infinix X6816C, appium:deviceName: 084113125P054404, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1640, appium:deviceUDID: 084113125P054404, appium:fullReset: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 2, appium:platformVersion: 11, appium:statBarHeight: 72, appium:takesScreenshot: true, appium:udid: 084113125P054404, appium:viewportRect: {height: 1400, left: 0, top: 72, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 333ac2d3-bb26-46e5-a494-e89d60b873b4]]>
+Command: [null, newSession {capabilities=[{appium:appActivity=com.bitnudge.ime.parent.view.activities.SplashActivity, appium:appPackage=com.gamechange.wasp, appium:automationName=UiAutomator2, appium:deviceName=emulator-5554, appium:fullReset=false, appium:noReset=true, platformName=ANDROID, appium:platformVersion=12.0, appium:udid=084113125P054404}], desiredCapabilities=Capabilities {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 12.0, udid: 084113125P054404}}]
+Capabilities {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 12.0, udid: 084113125P054404}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20246ms. 
+Host info: host: 'LAPTOP-DLCP2JCN', ip: '192.168.56.1'
 Build info: version: '4.13.0', revision: 'ba948ece5b*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [333ac2d3-bb26-46e5-a494-e89d60b873b4, findElement {using=id, value=com.example.yourapp:id/add_contact_button}]
-Capabilities {appium:appActivity: com.bitnudge.ime.parent.vie..., appium:appPackage: com.gamechange.wasp, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 12.0, udid: 084113125P054404}, appium:deviceApiLevel: 30, appium:deviceManufacturer: INFINIX MOBILITY LIMITED, appium:deviceModel: Infinix X6816C, appium:deviceName: 084113125P054404, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1640, appium:deviceUDID: 084113125P054404, appium:fullReset: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 2, appium:platformVersion: 11, appium:statBarHeight: 72, appium:takesScreenshot: true, appium:udid: 084113125P054404, appium:viewportRect: {height: 1400, left: 0, top: 72, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 333ac2d3-bb26-46e5-a494-e89d60b873b4
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+Command: [null, newSession {capabilities=[{appium:appActivity=com.bitnudge.ime.parent.view.activities.SplashActivity, appium:appPackage=com.gamechange.wasp, appium:automationName=UiAutomator2, appium:deviceName=emulator-5554, appium:fullReset=false, appium:noReset=true, platformName=ANDROID, appium:platformVersion=12.0, appium:udid=084113125P054404}], desiredCapabilities=Capabilities {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 12.0, udid: 084113125P054404}}]
+Capabilities {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 12.0, udid: 084113125P054404}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
 at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-at tests.ContactsTest.testAddNewContact(ContactsTest.java:66)
+at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:89)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:101)
+at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:113)
+at tests.SettingsTest.setUp(SettingsTest.java:38)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:829)
 at org.testng.TestRunner.run(TestRunner.java:602)
@@ -153,59 +204,55 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testAddNewContact -->
-        <test-method signature="testSearchContact()[pri:4, instance:tests.ContactsTest@2925bf5b]" started-at="2024-10-11T14:26:17 IST" name="testSearchContact" finished-at="2024-10-11T14:26:27 IST" duration-ms="10107" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        </test-method> <!-- verifyStatusOptions -->
+        <test-method signature="verifyNavigationToAddAttribute()[pri:3, instance:tests.SettingsTest@7817fd62]" started-at="2024-10-11T15:10:39 IST" name="verifyNavigationToAddAttribute" finished-at="2024-10-11T15:10:39 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
-              <![CDATA[An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+              <![CDATA[Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20246ms. 
+Host info: host: 'LAPTOP-DLCP2JCN', ip: '192.168.56.1'
 Build info: version: '4.13.0', revision: 'ba948ece5b*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [333ac2d3-bb26-46e5-a494-e89d60b873b4, findElement {using=id, value=com.example.yourapp:id/search_icon}]
-Capabilities {appium:appActivity: com.bitnudge.ime.parent.vie..., appium:appPackage: com.gamechange.wasp, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 12.0, udid: 084113125P054404}, appium:deviceApiLevel: 30, appium:deviceManufacturer: INFINIX MOBILITY LIMITED, appium:deviceModel: Infinix X6816C, appium:deviceName: 084113125P054404, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1640, appium:deviceUDID: 084113125P054404, appium:fullReset: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 2, appium:platformVersion: 11, appium:statBarHeight: 72, appium:takesScreenshot: true, appium:udid: 084113125P054404, appium:viewportRect: {height: 1400, left: 0, top: 72, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 333ac2d3-bb26-46e5-a494-e89d60b873b4]]>
+Command: [null, newSession {capabilities=[{appium:appActivity=com.bitnudge.ime.parent.view.activities.SplashActivity, appium:appPackage=com.gamechange.wasp, appium:automationName=UiAutomator2, appium:deviceName=emulator-5554, appium:fullReset=false, appium:noReset=true, platformName=ANDROID, appium:platformVersion=12.0, appium:udid=084113125P054404}], desiredCapabilities=Capabilities {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 12.0, udid: 084113125P054404}}]
+Capabilities {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 12.0, udid: 084113125P054404}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20246ms. 
+Host info: host: 'LAPTOP-DLCP2JCN', ip: '192.168.56.1'
 Build info: version: '4.13.0', revision: 'ba948ece5b*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [333ac2d3-bb26-46e5-a494-e89d60b873b4, findElement {using=id, value=com.example.yourapp:id/search_icon}]
-Capabilities {appium:appActivity: com.bitnudge.ime.parent.vie..., appium:appPackage: com.gamechange.wasp, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 12.0, udid: 084113125P054404}, appium:deviceApiLevel: 30, appium:deviceManufacturer: INFINIX MOBILITY LIMITED, appium:deviceModel: Infinix X6816C, appium:deviceName: 084113125P054404, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1640, appium:deviceUDID: 084113125P054404, appium:fullReset: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 2, appium:platformVersion: 11, appium:statBarHeight: 72, appium:takesScreenshot: true, appium:udid: 084113125P054404, appium:viewportRect: {height: 1400, left: 0, top: 72, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 333ac2d3-bb26-46e5-a494-e89d60b873b4
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+Command: [null, newSession {capabilities=[{appium:appActivity=com.bitnudge.ime.parent.view.activities.SplashActivity, appium:appPackage=com.gamechange.wasp, appium:automationName=UiAutomator2, appium:deviceName=emulator-5554, appium:fullReset=false, appium:noReset=true, platformName=ANDROID, appium:platformVersion=12.0, appium:udid=084113125P054404}], desiredCapabilities=Capabilities {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 12.0, udid: 084113125P054404}}]
+Capabilities {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 12.0, udid: 084113125P054404}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
 at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-at tests.ContactsTest.testSearchContact(ContactsTest.java:90)
+at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:89)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:101)
+at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:113)
+at tests.SettingsTest.setUp(SettingsTest.java:38)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:829)
 at org.testng.TestRunner.run(TestRunner.java:602)
@@ -224,59 +271,55 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSearchContact -->
-        <test-method signature="testSortContacts()[pri:5, instance:tests.ContactsTest@2925bf5b]" started-at="2024-10-11T14:26:27 IST" name="testSortContacts" finished-at="2024-10-11T14:26:37 IST" duration-ms="10110" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        </test-method> <!-- verifyNavigationToAddAttribute -->
+        <test-method signature="verifyNavigationToTeam()[pri:4, instance:tests.SettingsTest@7817fd62]" started-at="2024-10-11T15:10:39 IST" name="verifyNavigationToTeam" finished-at="2024-10-11T15:10:39 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
-              <![CDATA[An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+              <![CDATA[Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20246ms. 
+Host info: host: 'LAPTOP-DLCP2JCN', ip: '192.168.56.1'
 Build info: version: '4.13.0', revision: 'ba948ece5b*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [333ac2d3-bb26-46e5-a494-e89d60b873b4, findElement {using=id, value=com.example.yourapp:id/sort_icon}]
-Capabilities {appium:appActivity: com.bitnudge.ime.parent.vie..., appium:appPackage: com.gamechange.wasp, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 12.0, udid: 084113125P054404}, appium:deviceApiLevel: 30, appium:deviceManufacturer: INFINIX MOBILITY LIMITED, appium:deviceModel: Infinix X6816C, appium:deviceName: 084113125P054404, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1640, appium:deviceUDID: 084113125P054404, appium:fullReset: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 2, appium:platformVersion: 11, appium:statBarHeight: 72, appium:takesScreenshot: true, appium:udid: 084113125P054404, appium:viewportRect: {height: 1400, left: 0, top: 72, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 333ac2d3-bb26-46e5-a494-e89d60b873b4]]>
+Command: [null, newSession {capabilities=[{appium:appActivity=com.bitnudge.ime.parent.view.activities.SplashActivity, appium:appPackage=com.gamechange.wasp, appium:automationName=UiAutomator2, appium:deviceName=emulator-5554, appium:fullReset=false, appium:noReset=true, platformName=ANDROID, appium:platformVersion=12.0, appium:udid=084113125P054404}], desiredCapabilities=Capabilities {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 12.0, udid: 084113125P054404}}]
+Capabilities {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 12.0, udid: 084113125P054404}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20246ms. 
+Host info: host: 'LAPTOP-DLCP2JCN', ip: '192.168.56.1'
 Build info: version: '4.13.0', revision: 'ba948ece5b*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [333ac2d3-bb26-46e5-a494-e89d60b873b4, findElement {using=id, value=com.example.yourapp:id/sort_icon}]
-Capabilities {appium:appActivity: com.bitnudge.ime.parent.vie..., appium:appPackage: com.gamechange.wasp, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 12.0, udid: 084113125P054404}, appium:deviceApiLevel: 30, appium:deviceManufacturer: INFINIX MOBILITY LIMITED, appium:deviceModel: Infinix X6816C, appium:deviceName: 084113125P054404, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1640, appium:deviceUDID: 084113125P054404, appium:fullReset: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 2, appium:platformVersion: 11, appium:statBarHeight: 72, appium:takesScreenshot: true, appium:udid: 084113125P054404, appium:viewportRect: {height: 1400, left: 0, top: 72, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 333ac2d3-bb26-46e5-a494-e89d60b873b4
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+Command: [null, newSession {capabilities=[{appium:appActivity=com.bitnudge.ime.parent.view.activities.SplashActivity, appium:appPackage=com.gamechange.wasp, appium:automationName=UiAutomator2, appium:deviceName=emulator-5554, appium:fullReset=false, appium:noReset=true, platformName=ANDROID, appium:platformVersion=12.0, appium:udid=084113125P054404}], desiredCapabilities=Capabilities {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 12.0, udid: 084113125P054404}}]
+Capabilities {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 12.0, udid: 084113125P054404}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
 at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-at tests.ContactsTest.testSortContacts(ContactsTest.java:105)
+at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:89)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:101)
+at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:113)
+at tests.SettingsTest.setUp(SettingsTest.java:38)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:829)
 at org.testng.TestRunner.run(TestRunner.java:602)
@@ -295,59 +338,55 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSortContacts -->
-        <test-method signature="testDeleteContact()[pri:6, instance:tests.ContactsTest@2925bf5b]" started-at="2024-10-11T14:26:37 IST" name="testDeleteContact" finished-at="2024-10-11T14:26:47 IST" duration-ms="10164" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        </test-method> <!-- verifyNavigationToTeam -->
+        <test-method signature="verifyNavigationToTemplate()[pri:5, instance:tests.SettingsTest@7817fd62]" started-at="2024-10-11T15:10:39 IST" name="verifyNavigationToTemplate" finished-at="2024-10-11T15:10:39 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
-              <![CDATA[An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+              <![CDATA[Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20246ms. 
+Host info: host: 'LAPTOP-DLCP2JCN', ip: '192.168.56.1'
 Build info: version: '4.13.0', revision: 'ba948ece5b*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [333ac2d3-bb26-46e5-a494-e89d60b873b4, findElement {using=xpath, value=//android.widget.TextView[@text='Keron']}]
-Capabilities {appium:appActivity: com.bitnudge.ime.parent.vie..., appium:appPackage: com.gamechange.wasp, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 12.0, udid: 084113125P054404}, appium:deviceApiLevel: 30, appium:deviceManufacturer: INFINIX MOBILITY LIMITED, appium:deviceModel: Infinix X6816C, appium:deviceName: 084113125P054404, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1640, appium:deviceUDID: 084113125P054404, appium:fullReset: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 2, appium:platformVersion: 11, appium:statBarHeight: 72, appium:takesScreenshot: true, appium:udid: 084113125P054404, appium:viewportRect: {height: 1400, left: 0, top: 72, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 333ac2d3-bb26-46e5-a494-e89d60b873b4]]>
+Command: [null, newSession {capabilities=[{appium:appActivity=com.bitnudge.ime.parent.view.activities.SplashActivity, appium:appPackage=com.gamechange.wasp, appium:automationName=UiAutomator2, appium:deviceName=emulator-5554, appium:fullReset=false, appium:noReset=true, platformName=ANDROID, appium:platformVersion=12.0, appium:udid=084113125P054404}], desiredCapabilities=Capabilities {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 12.0, udid: 084113125P054404}}]
+Capabilities {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 12.0, udid: 084113125P054404}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20246ms. 
+Host info: host: 'LAPTOP-DLCP2JCN', ip: '192.168.56.1'
 Build info: version: '4.13.0', revision: 'ba948ece5b*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [333ac2d3-bb26-46e5-a494-e89d60b873b4, findElement {using=xpath, value=//android.widget.TextView[@text='Keron']}]
-Capabilities {appium:appActivity: com.bitnudge.ime.parent.vie..., appium:appPackage: com.gamechange.wasp, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 12.0, udid: 084113125P054404}, appium:deviceApiLevel: 30, appium:deviceManufacturer: INFINIX MOBILITY LIMITED, appium:deviceModel: Infinix X6816C, appium:deviceName: 084113125P054404, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1640, appium:deviceUDID: 084113125P054404, appium:fullReset: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 2, appium:platformVersion: 11, appium:statBarHeight: 72, appium:takesScreenshot: true, appium:udid: 084113125P054404, appium:viewportRect: {height: 1400, left: 0, top: 72, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 333ac2d3-bb26-46e5-a494-e89d60b873b4
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+Command: [null, newSession {capabilities=[{appium:appActivity=com.bitnudge.ime.parent.view.activities.SplashActivity, appium:appPackage=com.gamechange.wasp, appium:automationName=UiAutomator2, appium:deviceName=emulator-5554, appium:fullReset=false, appium:noReset=true, platformName=ANDROID, appium:platformVersion=12.0, appium:udid=084113125P054404}], desiredCapabilities=Capabilities {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 12.0, udid: 084113125P054404}}]
+Capabilities {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 12.0, udid: 084113125P054404}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
 at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-at tests.ContactsTest.testDeleteContact(ContactsTest.java:120)
+at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:89)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:101)
+at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:113)
+at tests.SettingsTest.setUp(SettingsTest.java:38)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:829)
 at org.testng.TestRunner.run(TestRunner.java:602)
@@ -366,59 +405,55 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testDeleteContact -->
-        <test-method signature="testBottomNavigationBar()[pri:7, instance:tests.ContactsTest@2925bf5b]" started-at="2024-10-11T14:26:47 IST" name="testBottomNavigationBar" finished-at="2024-10-11T14:26:58 IST" duration-ms="10085" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        </test-method> <!-- verifyNavigationToTemplate -->
+        <test-method signature="verifyNavigationToLabel()[pri:6, instance:tests.SettingsTest@7817fd62]" started-at="2024-10-11T15:10:39 IST" name="verifyNavigationToLabel" finished-at="2024-10-11T15:10:39 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
-              <![CDATA[An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+              <![CDATA[Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20246ms. 
+Host info: host: 'LAPTOP-DLCP2JCN', ip: '192.168.56.1'
 Build info: version: '4.13.0', revision: 'ba948ece5b*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [333ac2d3-bb26-46e5-a494-e89d60b873b4, findElement {using=id, value=com.example.yourapp:id/percakapan_button}]
-Capabilities {appium:appActivity: com.bitnudge.ime.parent.vie..., appium:appPackage: com.gamechange.wasp, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 12.0, udid: 084113125P054404}, appium:deviceApiLevel: 30, appium:deviceManufacturer: INFINIX MOBILITY LIMITED, appium:deviceModel: Infinix X6816C, appium:deviceName: 084113125P054404, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1640, appium:deviceUDID: 084113125P054404, appium:fullReset: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 2, appium:platformVersion: 11, appium:statBarHeight: 72, appium:takesScreenshot: true, appium:udid: 084113125P054404, appium:viewportRect: {height: 1400, left: 0, top: 72, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 333ac2d3-bb26-46e5-a494-e89d60b873b4]]>
+Command: [null, newSession {capabilities=[{appium:appActivity=com.bitnudge.ime.parent.view.activities.SplashActivity, appium:appPackage=com.gamechange.wasp, appium:automationName=UiAutomator2, appium:deviceName=emulator-5554, appium:fullReset=false, appium:noReset=true, platformName=ANDROID, appium:platformVersion=12.0, appium:udid=084113125P054404}], desiredCapabilities=Capabilities {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 12.0, udid: 084113125P054404}}]
+Capabilities {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 12.0, udid: 084113125P054404}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20246ms. 
+Host info: host: 'LAPTOP-DLCP2JCN', ip: '192.168.56.1'
 Build info: version: '4.13.0', revision: 'ba948ece5b*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [333ac2d3-bb26-46e5-a494-e89d60b873b4, findElement {using=id, value=com.example.yourapp:id/percakapan_button}]
-Capabilities {appium:appActivity: com.bitnudge.ime.parent.vie..., appium:appPackage: com.gamechange.wasp, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 12.0, udid: 084113125P054404}, appium:deviceApiLevel: 30, appium:deviceManufacturer: INFINIX MOBILITY LIMITED, appium:deviceModel: Infinix X6816C, appium:deviceName: 084113125P054404, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1640, appium:deviceUDID: 084113125P054404, appium:fullReset: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 2, appium:platformVersion: 11, appium:statBarHeight: 72, appium:takesScreenshot: true, appium:udid: 084113125P054404, appium:viewportRect: {height: 1400, left: 0, top: 72, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 333ac2d3-bb26-46e5-a494-e89d60b873b4
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+Command: [null, newSession {capabilities=[{appium:appActivity=com.bitnudge.ime.parent.view.activities.SplashActivity, appium:appPackage=com.gamechange.wasp, appium:automationName=UiAutomator2, appium:deviceName=emulator-5554, appium:fullReset=false, appium:noReset=true, platformName=ANDROID, appium:platformVersion=12.0, appium:udid=084113125P054404}], desiredCapabilities=Capabilities {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 12.0, udid: 084113125P054404}}]
+Capabilities {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 12.0, udid: 084113125P054404}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
 at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-at tests.ContactsTest.testBottomNavigationBar(ContactsTest.java:142)
+at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:89)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:101)
+at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:113)
+at tests.SettingsTest.setUp(SettingsTest.java:38)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:829)
 at org.testng.TestRunner.run(TestRunner.java:602)
@@ -437,15 +472,417 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testBottomNavigationBar -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ContactsTest@2925bf5b]" started-at="2024-10-11T14:26:58 IST" name="tearDown" finished-at="2024-10-11T14:26:58 IST" duration-ms="317" status="PASS">
+        </test-method> <!-- verifyNavigationToLabel -->
+        <test-method signature="verifyNavigationToCannedResponses()[pri:7, instance:tests.SettingsTest@7817fd62]" started-at="2024-10-11T15:10:39 IST" name="verifyNavigationToCannedResponses" finished-at="2024-10-11T15:10:39 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20246ms. 
+Host info: host: 'LAPTOP-DLCP2JCN', ip: '192.168.56.1'
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:appActivity=com.bitnudge.ime.parent.view.activities.SplashActivity, appium:appPackage=com.gamechange.wasp, appium:automationName=UiAutomator2, appium:deviceName=emulator-5554, appium:fullReset=false, appium:noReset=true, platformName=ANDROID, appium:platformVersion=12.0, appium:udid=084113125P054404}], desiredCapabilities=Capabilities {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 12.0, udid: 084113125P054404}}]
+Capabilities {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 12.0, udid: 084113125P054404}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20246ms. 
+Host info: host: 'LAPTOP-DLCP2JCN', ip: '192.168.56.1'
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:appActivity=com.bitnudge.ime.parent.view.activities.SplashActivity, appium:appPackage=com.gamechange.wasp, appium:automationName=UiAutomator2, appium:deviceName=emulator-5554, appium:fullReset=false, appium:noReset=true, platformName=ANDROID, appium:platformVersion=12.0, appium:udid=084113125P054404}], desiredCapabilities=Capabilities {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 12.0, udid: 084113125P054404}}]
+Capabilities {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 12.0, udid: 084113125P054404}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:89)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:101)
+at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:113)
+at tests.SettingsTest.setUp(SettingsTest.java:38)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNavigationToCannedResponses -->
+        <test-method signature="verifyNavigationToCampaigns()[pri:8, instance:tests.SettingsTest@7817fd62]" started-at="2024-10-11T15:10:39 IST" name="verifyNavigationToCampaigns" finished-at="2024-10-11T15:10:39 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20246ms. 
+Host info: host: 'LAPTOP-DLCP2JCN', ip: '192.168.56.1'
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:appActivity=com.bitnudge.ime.parent.view.activities.SplashActivity, appium:appPackage=com.gamechange.wasp, appium:automationName=UiAutomator2, appium:deviceName=emulator-5554, appium:fullReset=false, appium:noReset=true, platformName=ANDROID, appium:platformVersion=12.0, appium:udid=084113125P054404}], desiredCapabilities=Capabilities {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 12.0, udid: 084113125P054404}}]
+Capabilities {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 12.0, udid: 084113125P054404}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20246ms. 
+Host info: host: 'LAPTOP-DLCP2JCN', ip: '192.168.56.1'
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:appActivity=com.bitnudge.ime.parent.view.activities.SplashActivity, appium:appPackage=com.gamechange.wasp, appium:automationName=UiAutomator2, appium:deviceName=emulator-5554, appium:fullReset=false, appium:noReset=true, platformName=ANDROID, appium:platformVersion=12.0, appium:udid=084113125P054404}], desiredCapabilities=Capabilities {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 12.0, udid: 084113125P054404}}]
+Capabilities {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 12.0, udid: 084113125P054404}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:89)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:101)
+at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:113)
+at tests.SettingsTest.setUp(SettingsTest.java:38)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNavigationToCampaigns -->
+        <test-method signature="verifyNavigationToWABADashboard()[pri:9, instance:tests.SettingsTest@7817fd62]" started-at="2024-10-11T15:10:39 IST" name="verifyNavigationToWABADashboard" finished-at="2024-10-11T15:10:39 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20246ms. 
+Host info: host: 'LAPTOP-DLCP2JCN', ip: '192.168.56.1'
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:appActivity=com.bitnudge.ime.parent.view.activities.SplashActivity, appium:appPackage=com.gamechange.wasp, appium:automationName=UiAutomator2, appium:deviceName=emulator-5554, appium:fullReset=false, appium:noReset=true, platformName=ANDROID, appium:platformVersion=12.0, appium:udid=084113125P054404}], desiredCapabilities=Capabilities {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 12.0, udid: 084113125P054404}}]
+Capabilities {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 12.0, udid: 084113125P054404}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20246ms. 
+Host info: host: 'LAPTOP-DLCP2JCN', ip: '192.168.56.1'
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:appActivity=com.bitnudge.ime.parent.view.activities.SplashActivity, appium:appPackage=com.gamechange.wasp, appium:automationName=UiAutomator2, appium:deviceName=emulator-5554, appium:fullReset=false, appium:noReset=true, platformName=ANDROID, appium:platformVersion=12.0, appium:udid=084113125P054404}], desiredCapabilities=Capabilities {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 12.0, udid: 084113125P054404}}]
+Capabilities {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 12.0, udid: 084113125P054404}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:89)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:101)
+at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:113)
+at tests.SettingsTest.setUp(SettingsTest.java:38)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNavigationToWABADashboard -->
+        <test-method signature="verifyLogoutFunctionality()[pri:10, instance:tests.SettingsTest@7817fd62]" started-at="2024-10-11T15:10:39 IST" name="verifyLogoutFunctionality" finished-at="2024-10-11T15:10:39 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20246ms. 
+Host info: host: 'LAPTOP-DLCP2JCN', ip: '192.168.56.1'
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:appActivity=com.bitnudge.ime.parent.view.activities.SplashActivity, appium:appPackage=com.gamechange.wasp, appium:automationName=UiAutomator2, appium:deviceName=emulator-5554, appium:fullReset=false, appium:noReset=true, platformName=ANDROID, appium:platformVersion=12.0, appium:udid=084113125P054404}], desiredCapabilities=Capabilities {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 12.0, udid: 084113125P054404}}]
+Capabilities {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 12.0, udid: 084113125P054404}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20246ms. 
+Host info: host: 'LAPTOP-DLCP2JCN', ip: '192.168.56.1'
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:appActivity=com.bitnudge.ime.parent.view.activities.SplashActivity, appium:appPackage=com.gamechange.wasp, appium:automationName=UiAutomator2, appium:deviceName=emulator-5554, appium:fullReset=false, appium:noReset=true, platformName=ANDROID, appium:platformVersion=12.0, appium:udid=084113125P054404}], desiredCapabilities=Capabilities {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 12.0, udid: 084113125P054404}}]
+Capabilities {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 12.0, udid: 084113125P054404}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:89)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:101)
+at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:113)
+at tests.SettingsTest.setUp(SettingsTest.java:38)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogoutFunctionality -->
+        <test-method signature="verifyBottomNavigationBar()[pri:11, instance:tests.SettingsTest@7817fd62]" started-at="2024-10-11T15:10:39 IST" name="verifyBottomNavigationBar" finished-at="2024-10-11T15:10:39 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20246ms. 
+Host info: host: 'LAPTOP-DLCP2JCN', ip: '192.168.56.1'
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:appActivity=com.bitnudge.ime.parent.view.activities.SplashActivity, appium:appPackage=com.gamechange.wasp, appium:automationName=UiAutomator2, appium:deviceName=emulator-5554, appium:fullReset=false, appium:noReset=true, platformName=ANDROID, appium:platformVersion=12.0, appium:udid=084113125P054404}], desiredCapabilities=Capabilities {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 12.0, udid: 084113125P054404}}]
+Capabilities {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 12.0, udid: 084113125P054404}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20246ms. 
+Host info: host: 'LAPTOP-DLCP2JCN', ip: '192.168.56.1'
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:appActivity=com.bitnudge.ime.parent.view.activities.SplashActivity, appium:appPackage=com.gamechange.wasp, appium:automationName=UiAutomator2, appium:deviceName=emulator-5554, appium:fullReset=false, appium:noReset=true, platformName=ANDROID, appium:platformVersion=12.0, appium:udid=084113125P054404}], desiredCapabilities=Capabilities {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 12.0, udid: 084113125P054404}}]
+Capabilities {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 12.0, udid: 084113125P054404}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:89)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:101)
+at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:113)
+at tests.SettingsTest.setUp(SettingsTest.java:38)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBottomNavigationBar -->
+        <test-method signature="verifyScreenResponsiveness()[pri:12, instance:tests.SettingsTest@7817fd62]" started-at="2024-10-11T15:10:39 IST" name="verifyScreenResponsiveness" finished-at="2024-10-11T15:10:39 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20246ms. 
+Host info: host: 'LAPTOP-DLCP2JCN', ip: '192.168.56.1'
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:appActivity=com.bitnudge.ime.parent.view.activities.SplashActivity, appium:appPackage=com.gamechange.wasp, appium:automationName=UiAutomator2, appium:deviceName=emulator-5554, appium:fullReset=false, appium:noReset=true, platformName=ANDROID, appium:platformVersion=12.0, appium:udid=084113125P054404}], desiredCapabilities=Capabilities {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 12.0, udid: 084113125P054404}}]
+Capabilities {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 12.0, udid: 084113125P054404}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not find a connected Android device in 20246ms. 
+Host info: host: 'LAPTOP-DLCP2JCN', ip: '192.168.56.1'
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:appActivity=com.bitnudge.ime.parent.view.activities.SplashActivity, appium:appPackage=com.gamechange.wasp, appium:automationName=UiAutomator2, appium:deviceName=emulator-5554, appium:fullReset=false, appium:noReset=true, platformName=ANDROID, appium:platformVersion=12.0, appium:udid=084113125P054404}], desiredCapabilities=Capabilities {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 12.0, udid: 084113125P054404}}]
+Capabilities {appActivity: com.bitnudge.ime.parent.vie..., appPackage: com.gamechange.wasp, automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: true, platformName: ANDROID, platformVersion: 12.0, udid: 084113125P054404}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:89)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:101)
+at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:113)
+at tests.SettingsTest.setUp(SettingsTest.java:38)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyScreenResponsiveness -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SettingsTest@7817fd62]" started-at="2024-10-11T15:10:39 IST" name="tearDown" finished-at="2024-10-11T15:10:39 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- tests.ContactsTest -->
+      </class> <!-- tests.SettingsTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
