@@ -37,6 +37,8 @@ public class ConversationsTest extends BaseTest {
 	        
 	    }
 	
+	    
+	    /* These re test cases for testing the conversations scenarios and of the shopkey WASP */
 
     @Test(priority = 1)
     public void testCNavigation() {
